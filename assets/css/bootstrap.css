@@ -1862,6 +1862,7 @@ select:focus:invalid:focus {
   margin-bottom: 0;
   font-size: 13px;
   font-weight: 500;
+  color: #333;
   line-height: 20px;
   text-align: center;
   white-space: nowrap;
@@ -1976,11 +1977,6 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
-.btn {
-  color: #ffffff;
-  background-color: #a7a9aa;
-  border-color: #a7a9aa;
-}
 
 .btn:hover,
 .btn:focus,
