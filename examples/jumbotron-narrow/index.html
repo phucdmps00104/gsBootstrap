@@ -9,17 +9,13 @@
 
 <title>
   
-    Bootstrap
+    Narrow page template &middot; Bootstrap
   
 </title>
 
 <!-- Bootstrap core CSS -->
 <link href="/bootstrap3demo/assets/css/bootstrap.css" rel="stylesheet">
 
-
-<!-- Documentation extras -->
-<link href="/bootstrap3demo/assets/css/docs.css" rel="stylesheet">
-<link href="/bootstrap3demo/assets/css/pygments-manni.css" rel="stylesheet">
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -48,51 +44,138 @@
 
     <!-- Place anything custom after this. -->
   </head>
-  <body class="bs-docs-home">
+  <body>
 
     <!-- Page content of course! -->
-    <div class="bs-docs-jumbotron masthead">
-  <div class="container">
+    <!-- Custom styles for this template -->
+<style>
+  /* Space out content a bit */
+  body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-    <h1>Bootstrap</h1>
-    <p class="lead">Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</p>
-    <p>
-      <a href="assets/bootstrap.zip" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 3.0.0']);">Download Bootstrap</a>
-      <a href="./docs/" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Docs', 'View docs']);">View docs</a>
-    </p>
+  /* Everything but the jumbotron gets side spacing for mobile-first views */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    <div class="bs-docs-social">
-      <ul class="bs-docs-social-buttons">
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-        </li>
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
-        </li>
-        <li class="follow-btn">
-          <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-        </li>
-        <li class="tweet-btn">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
-        </li>
-      </ul>
+  /* Custom page header */
+  .header {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  /* Make the masthead heading the same height as the navigation */
+  .header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+
+  /* Custom page footer */
+  .footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  /* Custom container */
+  .container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .container-narrow > hr {
+    margin: 30px 0;
+  }
+
+  /* Main marketing message and sign up button */
+  .jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+
+  /* Supporting marketing content */
+  .marketing {
+    margin: 40px 0;
+  }
+  .marketing p + h4 {
+    margin-top: 28px;
+  }
+
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+      margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+      border-bottom: 0;
+    }
+  }
+</style>
+
+
+
+<div class="container-narrow">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">Project name</h3>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Jumbotron heading</h1>
+    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <p><a class="btn btn-large btn-success" href="#">Sign up today</a></p>
+  </div>
+
+  <div class="row marketing">
+    <div class="col-span-6">
+      <h4>Subheading</h4>
+      <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+      <h4>Subheading</h4>
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+      <h4>Subheading</h4>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
     </div>
 
-    <ul class="masthead-links">
-      <li>
-        <a href="http://github.com/twitter/bootstrap" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
-      </li>
-      <li>
-        <a href="./docs/#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
-      </li>
-      <li>
-        <a href="http://expo.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
-      </li>
-      <li>Version 3.0.0</li>
-    </ul>
+    <div class="col-span-6">
+      <h4>Subheading</h4>
+      <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
+      <h4>Subheading</h4>
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+      <h4>Subheading</h4>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    </div>
   </div>
-</div>
+
+  <div class="footer">
+    <p>&copy; Company 2013</p>
+  </div>
+
+</div> <!-- /container -->
 
 
     <!-- JS and analytics only. -->

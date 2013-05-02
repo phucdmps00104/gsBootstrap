@@ -9,17 +9,13 @@
 
 <title>
   
-    Bootstrap
+    Sticky footer template &middot; Bootstrap
   
 </title>
 
 <!-- Bootstrap core CSS -->
 <link href="/bootstrap3demo/assets/css/bootstrap.css" rel="stylesheet">
 
-
-<!-- Documentation extras -->
-<link href="/bootstrap3demo/assets/css/docs.css" rel="stylesheet">
-<link href="/bootstrap3demo/assets/css/pygments-manni.css" rel="stylesheet">
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -48,49 +44,84 @@
 
     <!-- Place anything custom after this. -->
   </head>
-  <body class="bs-docs-home">
+  <body>
 
     <!-- Page content of course! -->
-    <div class="bs-docs-jumbotron masthead">
+    <!-- Custom styles for this template -->
+<style>
+
+  /* Sticky footer styles
+  -------------------------------------------------- */
+
+  html,
+  body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+  }
+
+  /* Wrapper for page content to push down footer */
+  #wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+  }
+
+  /* Set the fixed height of the footer here */
+  #push,
+  #footer {
+    height: 60px;
+  }
+  #footer {
+    background-color: #f5f5f5;
+  }
+
+  /* Lastly, apply responsive CSS fixes as necessary */
+  @media (max-width: 767px) {
+    #footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+
+  .container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+  .container .credit {
+    margin: 20px 0;
+  }
+
+</style>
+
+
+
+<!-- Wrap all page content here -->
+<div id="wrap">
+
+  <!-- Begin page content -->
   <div class="container">
-
-    <h1>Bootstrap</h1>
-    <p class="lead">Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</p>
-    <p>
-      <a href="assets/bootstrap.zip" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 3.0.0']);">Download Bootstrap</a>
-      <a href="./docs/" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Docs', 'View docs']);">View docs</a>
-    </p>
-
-    <div class="bs-docs-social">
-      <ul class="bs-docs-social-buttons">
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-        </li>
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
-        </li>
-        <li class="follow-btn">
-          <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-        </li>
-        <li class="tweet-btn">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
-        </li>
-      </ul>
+    <div class="page-header">
+      <h1>Sticky footer</h1>
     </div>
+    <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+    <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
+  </div>
 
-    <ul class="masthead-links">
-      <li>
-        <a href="http://github.com/twitter/bootstrap" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
-      </li>
-      <li>
-        <a href="./docs/#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
-      </li>
-      <li>
-        <a href="http://expo.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
-      </li>
-      <li>Version 3.0.0</li>
-    </ul>
+  <div id="push"></div>
+</div>
 
+<div id="footer">
+  <div class="container">
+    <p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
   </div>
 </div>
 

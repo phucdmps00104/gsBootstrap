@@ -9,17 +9,13 @@
 
 <title>
   
-    Bootstrap
+    Sign in form template &middot; Bootstrap
   
 </title>
 
 <!-- Bootstrap core CSS -->
 <link href="/bootstrap3demo/assets/css/bootstrap.css" rel="stylesheet">
 
-
-<!-- Documentation extras -->
-<link href="/bootstrap3demo/assets/css/docs.css" rel="stylesheet">
-<link href="/bootstrap3demo/assets/css/pygments-manni.css" rel="stylesheet">
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -48,51 +44,72 @@
 
     <!-- Place anything custom after this. -->
   </head>
-  <body class="bs-docs-home">
+  <body>
 
     <!-- Page content of course! -->
-    <div class="bs-docs-jumbotron masthead">
-  <div class="container">
+    <!-- Custom styles for this template -->
+<style>
 
-    <h1>Bootstrap</h1>
-    <p class="lead">Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</p>
-    <p>
-      <a href="assets/bootstrap.zip" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 3.0.0']);">Download Bootstrap</a>
-      <a href="./docs/" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Docs', 'View docs']);">View docs</a>
-    </p>
+  body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+  }
 
-    <div class="bs-docs-social">
-      <ul class="bs-docs-social-buttons">
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-        </li>
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
-        </li>
-        <li class="follow-btn">
-          <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-        </li>
-        <li class="tweet-btn">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
-        </li>
-      </ul>
-    </div>
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin input[type="text"],
+  .form-signin input[type="password"] {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .form-signin input[type="text"]:focus,
+  .form-signin input[type="password"]:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 
-    <ul class="masthead-links">
-      <li>
-        <a href="http://github.com/twitter/bootstrap" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
-      </li>
-      <li>
-        <a href="./docs/#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
-      </li>
-      <li>
-        <a href="http://expo.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
-      </li>
-      <li>Version 3.0.0</li>
-    </ul>
+</style>
 
-  </div>
-</div>
+
+
+<div class="container">
+
+  <form class="form-signin">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <input type="text" class="input-block-level" placeholder="Email address" autofocus>
+    <input type="password" class="input-block-level" placeholder="Password">
+    <label class="checkbox">
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+    <button class="btn btn-large btn-primary btn-block" type="submit">Sign in</button>
+  </form>
+
+</div> <!-- /container -->
 
 
     <!-- JS and analytics only. -->
